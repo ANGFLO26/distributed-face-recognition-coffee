@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Coffeehouse Face Recognition",
+    "slug": "coffeehouse-face-recognition",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#8B4513"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coffeehouse.facerecognition",
+      "infoPlist": {
+        "NSCameraUsageDescription": "App cần quyền camera để chụp ảnh khách hàng",
+        "NSPhotoLibraryUsageDescription": "App cần quyền truy cập ảnh để chọn ảnh từ thư viện"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#8B4513"
+      },
+      "package": "com.coffeehouse.facerecognition",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "App cần quyền camera để chụp ảnh khách hàng."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "App cần quyền truy cập ảnh để chọn ảnh từ thư viện."
+        }
+      ]
+    ]
+  }
+}
+
